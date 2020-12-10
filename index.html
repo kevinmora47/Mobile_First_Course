@@ -5,20 +5,22 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Document</title>
-  <link href=“https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;500&display=swap”
-    rel=“stylesheet”>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles.css">
   <link rel="stylesheet" href="./css/tablet.css" media="(min-width: 930px)">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="./js/index.js"></script>
 </head>
 
 <body>
   <header>
     <img src="./assets/imgs/logo.svg" alt="">
     <div class="header--title--container">
-      <h1>La próxima revolución en el interambio de criptomonedas.</h1>
-      <p>Batatabit te ayuda a navegar entre los diferentes
+      <h1 id="legendName">La próxima revolución en el interambio de criptomonedas.</h1>
+      <p id="subLegend">Batatabit te ayuda a navegar entre los diferentes
         precios y tendencias.</p>
-      <a href="#plans" class="header--button">Cononce nuestros planes <span></span> </a>
+      <a id="plans" href="#plans" class="header--button">Cononce nuestros planes <span></span> </a>
     </div>
   </header>
   <main>
@@ -29,33 +31,6 @@
         <p>Traenos información en tiempo real de las casas de cambio y las monedas mas importantes de todo el mundo</p>
       </div>
       <section class="main--tables-container">
-        <div class="main--currency--table">
-          <p class="currency--table--title">Monedas</p>
-          <div class="currency--table--container">
-            <table>
-              <tr>
-                <td class="table__top-left">Bitcoin</td>
-                <td class="table__top-right table__right">$1.96 <span class="down"></span></td>
-              </tr>
-              <tr>
-                <td>Etherium</td>
-                <td class="table__right">$0.07 <span class="up"></span></td>
-              </tr>
-              <tr>
-                <td>Ripple</td>
-                <td class="table__right">$2.17 <span class="down"></span></td>
-              </tr>
-              <tr>
-                <td class="table__bottom-left">Stellar</td>
-                <td class="table__bottom-right table__right">$4.96 <span class="down"></span></td>
-              </tr>
-            </table>
-
-          </div>
-          <div class="currency--table--date">
-            <p> <b>Actualizado:</b> 19 Julio 23:45</p>
-          </div>
-        </div>
         <div class="main--currency--table">
           <p class="currency--table--title">Monedas</p>
           <div class="currency--table--container">
